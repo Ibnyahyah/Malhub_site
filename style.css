@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mohave:wght@700&family=Nothing+You+Could+Do&display=swap");
+
+:root {
+  --primary-red: #70000e;
+  --lato-font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #0c2e8a;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-red);
+  mix-blend-mode: soft-light;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 7rem;
+  z-index: 20;
+  color: white;
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.header.transparent {
+  background: transparent;
+}
+
+.hamburger {
+  background-image: url("./media/icons/menu open.png");
+  height: 2.5rem;
+  cursor: pointer;
+  width: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 30;
+}
+
+.hamburger.active {
+  background-image: url("./media/icons/menu close.png");
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 20;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  place-items: center;
+  opacity: 0.9;
+  display: grid;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+  background: #0c2e8a;
+}
+
+.navigation.active {
+  transform: translateX(0);
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 3rem;
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.navigation ul > li {
+  text-align: center;
+}
+
+.nav_link {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: var(--lato-font-family);
+}
+.nav_link:hover {
+  text-decoration: underline;
+  font-size: 3.5rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+section{
+  position: relative;
+}
+.top-section {
+  margin-top: 180px;
+  text-align: center;
+  position: relative;
+}
+.top-section h1 {
+  width: 100%;
+  margin: auto;
+  font-size: 70px;
+  /* line-height: 0px; */
+}
+.text-background {
+  background: repeating-linear-gradient(
+      -45deg,
+      #0054fd,
+      #ff19f7 7.14%,
+      #ff2e5d 14.28%,
+      #ffaa07 21.42%,
+      #ffaa07 38.56%,
+      #ff2e5d 55.7%,
+      #ff19f7 72.84%,
+      #0054fd 90%
+    )
+    0 0/800vw 800vw;
+	-webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 50%;
+    background-size: cover;
+    -webkit-animation: gradient-rotate 4s linear 0s infinite normal none running;
+    animation: gradient-rotate 4s linear 0s infinite normal none running;
+}
+.top-section p {
+  width: 70%;
+  margin: auto;
+  color: gray;
+}
+.btn-container{
+	margin-top:40px;
+}
+.btn-container a{
+	background-color: transparent;
+	border: 2px solid black;
+	border-radius: 30px;
+	padding: 15px 25px;
+	text-decoration: none;
+	color:black;
+}
+.btn-container a:hover{
+	background-color: black;
+	color: white;
+}
+.slider{
+  background: gray;
+  height: 80vh;
+}
+.carousel-item{
+  font-size: 40px;
+  font-weight: 600;
+}
+.carousel-row{
+  margin-top: 150px;
+}
+.counter{
+  font-size: 50px;
+  font-weight: 800;
+}
+.parrallax{
+  text-align: center;
+  background-image: url(assets/img/lascotstudio-74.JPG);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parrallax-content{
+  width: 60%;
+  margin: auto;
+}
+.parrallax-content h1{
+  font-size: 60px;
+  font-weight: 900;
+}
