@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
+ul{
+  margin:0;
+}
 
 .home-container {
   min-width: 100vw;
@@ -51,9 +54,6 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   min-height: 7rem;
   z-index: 20;
@@ -141,7 +141,7 @@ section{
   position: relative;
 }
 .top-section {
-  margin-top: 180px;
+  margin-top: 300px;
   text-align: center;
   position: relative;
 }
@@ -193,8 +193,8 @@ section{
 	color: white;
 }
 .slider{
-  background: gray;
-  height: 80vh;
+  background: white;
+  height: 50vh;
 }
 .carousel-item{
   font-size: 40px;
@@ -225,5 +225,29 @@ section{
 }
 .parrallax-content h1{
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 500;
+  color: white;
+}
+.parrallax-content a{
+  font-weight: 500;
+}
+.our-vision{
+  background: white;
+}
+.our-vision h1{
+  font-weight: 800;
+  font-size: 50px;
+}
+.our-vision-top{
+  margin-top:100px;
+  margin-bottom:50px;
+}
+.our-vision-top h1{
+  margin-bottom: 100px;
+}
+.our-vision-top p {
+  width: 80%;
+}
+.our-vision ul li {
+  margin: 25px 0;
 }
